@@ -97,21 +97,21 @@ summary(model_bin)
 
 # Crime
 model_bin <- glm(freq.bin ~ as.factor(BW) + as.factor(Name), data=data_bin_long %>% filter(topic =="Crime"), family = "binomial")
-summary(model_bin)
+summary(model_bin) # n.s.
 
 # Economy
 model_bin <- glm(freq.bin ~ as.factor(BW) + as.factor(Name), data=data_bin_long %>% filter(topic =="Economy"), family = "binomial")
-summary(model_bin)
+summary(model_bin) # n.s.
 
 # Politics
 model_bin <- glm(freq.bin ~ as.factor(BW) + as.factor(Name), data=data_bin_long %>% filter(topic =="Politics"), family = "binomial")
-summary(model_bin)
+summary(model_bin) # n.s.
 
 # Race
 model_bin <- glm(freq.bin ~ as.factor(BW) + as.factor(Name), data=data_bin_long %>% filter(topic =="Race"), family = "binomial")
-summary(model_bin)
+summary(model_bin) # n.s. (p <.10)
 
 # Sports
 model_bin <- glm(freq.bin ~ as.factor(BW) + as.factor(Name), data=data_bin_long %>% filter(topic =="Sports"), family = "binomial")
-summary(model_bin)
+summary(model_bin) # n.s.
 
